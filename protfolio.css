@@ -4,7 +4,7 @@
     --accent-color:#3030fa;
     --accent-hover-color:#0a0db3;
     --accent-active-color:#040477;
-    --border-color:#c9c9c9;
+    --border-color:#616161;
 }
 /*General style*/
 body{
@@ -18,10 +18,16 @@ ul{
     list-style: none;
     padding: 0;
 }
-
+a{
+    text-decoration: none;
+    color: var(--accent-color);
+}
 /*header*/
 header{
     display:flex;
+    border-bottom: 1px solid var(--border-color);
+    padding: 0 0;
+    align-items: center;
     justify-content:space-between;
     align-items:center
 }
@@ -30,8 +36,13 @@ nav ul{
     list-style: none;
     gap:20px;
 }
-nav a{
-    text-decoration: none;
-    font-weight: 500;
-    color: var(--accent-color);
+nav ul li a{
+    padding: 0.25rem 0.5rem;
+    margin: 5rem 0.25rem;
 }
+#logo{
+    width: 40px;
+    height: 40px;
+    margin: 0 1rem;
+}
+
