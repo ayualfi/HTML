@@ -45,4 +45,14 @@ nav ul li a{
     height: 40px;
     margin: 0 1rem;
 }
-
+/*Main Content*/
+main{
+    padding:2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+#kenalan{
+    text-align: center;
+}
