@@ -1,10 +1,10 @@
 :root{
     --background-color: #000000;
-    --text-color:#f9f9f9;
+    --text-color:#d8d8d8;
     --accent-color:#3030fa;
     --accent-hover-color:#0a0db3;
     --accent-active-color:#040477;
-    --border-color:#616161;
+    --border-color:#7e7e7e;
 }
 /*General style*/
 body{
@@ -54,5 +54,33 @@ main{
     gap: 2rem;
 }
 #kenalan{
+    margin-top: 5rem;
     text-align: center;
 }
+#kenalan,
+#projects,
+#Experiences,
+#Education{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+/* Media query for desktop styles */
+@media (min-width:768px){
+    #flex-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        width: 100%;
+        gap: 2rem;
+    }
+    #projects{
+        grid-area: 1 / 1;
+    }
+    #Experiences{
+        grid-area: 1 / 2;
+    }
+    #Education{
+        grid-area: 1 / 3;
+    }
+    }
