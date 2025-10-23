@@ -61,6 +61,15 @@ main{
     margin-top: 5rem;
     text-align: center;
 }
+#Articles{
+    align-items: center;
+}
+#Articles section a:hover{
+    text-decoration:underline var(--accent-hover-color);
+}
+article a:hover{
+    text-decoration:underline var(--accent-hover-color);
+}
 #kenalan,
 #projects,
 #Experiences,
@@ -82,12 +91,68 @@ blockquote{
     border-radius: 5px;
     margin: 1rem 0;
 }
+#Articles,
+#HTML,
+#calculator,
+#quiz,
+#countdown,
+#upcoming{
+    border: 1px solid var(--accent-color);
+    padding: 2rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+/*Contact*/
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+label{
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+input,
+textarea{
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+input:focus,
+textarea:focus{
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 2px var(--accent-color);
+}
+button{
+    padding: 0.75rem 1.5rem;
+    background-color: var(--accent-color);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    background-color: var(--accent-hover-color);
+}
+button:active{
+    background-color: var(--accent-active-color);
+}
+#kontakmi{
+    text-align: center;
+}
 /*Footer*/
 #end{
     text-align: center;
     padding: 1rem;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid ;
 }
+
 /* Media query for desktop styles */
 @media (min-width:768px){
     #flex-wrapper{
@@ -111,4 +176,34 @@ blockquote{
     #Education{
         width: unset;
     }
+    #projects{
+        display: grid;
+        grid-template-columns: repeat(5, 2fr);
+        grid-template-rows: 2fr;
+        width: 100%;
+        gap: 2rem;
     }
+    #HTML{
+        grid-area: 1/1;
+    }
+    #calculator{
+        grid-area: 1/3;
+    }
+    #quiz{
+        grid-area: 1/5;
+    }
+    #countdown{
+        grid-area: 2/2;
+    }
+    #upcoming{
+        grid-area: 2/4;
+    }
+    #HTML,
+    #calculator,
+    #quiz,
+    #countdown,
+    #upcoming{
+        width: unset;
+    }
+    }
+
