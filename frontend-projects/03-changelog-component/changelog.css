@@ -107,6 +107,9 @@ body{
     padding: 10px 20px;
     text-decoration: none;
 }
+.button:hover{
+    background-color: var(--accent-hover-color);
+}
 
 @media(max-width:600px){
 .timeline_item{
