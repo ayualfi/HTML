@@ -176,13 +176,6 @@ button:active{
     #Education{
         width: unset;
     }
-    #projects{
-        display: grid;
-        grid-template-columns: repeat(5, 2fr);
-        grid-template-rows: 2fr;
-        width: 100%;
-        gap: 2rem;
-    }
     #HTML{
         grid-area: 1/1;
     }
